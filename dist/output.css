@@ -918,6 +918,10 @@ video {
   border-bottom-width: 4px;
 }
 
+.border-l-4{
+  border-left-width: 4px;
+}
+
 .border-none{
   border-style: none;
 }
@@ -1147,10 +1151,6 @@ video {
 
 .pt-8{
   padding-top: 2rem;
-}
-
-.pt-1{
-  padding-top: 0.25rem;
 }
 
 .pb-0{
@@ -1468,6 +1468,10 @@ video {
 
   .md\:border-r-0{
     border-right-width: 0px;
+  }
+
+  .md\:border-l-0{
+    border-left-width: 0px;
   }
 
   .md\:border-hidden{
