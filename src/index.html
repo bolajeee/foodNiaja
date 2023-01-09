@@ -17,30 +17,32 @@
 
     <div class="grid md:grid-cols-3"> <!-- content wrapper -->
         <div class="md:flex md:justify-end md:bg-gray-200">
-            <nav class="text-right">
+            <nav class="text-right ">
                 <div class="flex justify-between items-center ">
-                <div class="font-bold uppercase p-4 border-b border-gray-100 ">
-                    <h1><a href="/" class="text-2xl hover:text-gray-800">Food Niaja</a></h1>
+                    <div class="font-bold uppercase p-4 border-b border-gray-100 ">
+                        <h1><a href="/" class="text-2xl hover:text-gray-800">Food Niaja</a></h1>
+                    </div>
+                    <div class="px-6 cursor-pointer md:hidden " id="burger">
+                        <i class="fa-solid fa-bars scale-150"></i>
+                    </div>
                 </div>
-                <div class="px-4 cursor-pointer md:hidden " id="burger">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-                </div>
-                <ul class="text-sm mt-6 hidden md:block " id="menu">
+                <ul class=" text-sm mt-4 hidden md:block" id="menu">
                     <li class="py-1">
-                        <a href="index.html" class="flex px-4 border-primary border-r-4 content-center justify-end">
+                        <a href="index.html" class="flex px-4 border-primary border-r-4 justify-end content-center">
                             <span class="text-gray-700 font-bold">Home</span>
                             <i class="fa-solid fa-house mx-2 py-1"></i>
                         </a>
                     </li>
                     <li class="py-1">
-                        <a href="about.html" class="flex px-4 border-r-4 border-white content-center justify-end md:border-gray-200">
+                        <a href="about.html"
+                            class="flex px-4 border-r-4 justify-end border-white content-center md:border-gray-200">
                             <span>About</span>
                             <i class="fa-solid fa-circle-question mx-2 py-1"></i>
                         </a>
                     </li>
                     <li class="py-1">
-                        <a href="contact.html" class="flex px-4 border-r-4 border-white content-end justify-end md:border-gray-200">
+                        <a href="contact.html"
+                            class="flex px-4 border-r-4 justify-end border-white content-end md:border-gray-200">
                             <span>Contact</span>
                             <i class="fa-solid fa-address-book mx-2 py-1"></i>
                         </a>
@@ -49,10 +51,12 @@
             </nav>
         </div> <!--end nav -->
 
-        <main class="px-16 py-6 md:col-span-2">
+        <main class="px-6 py-6 md:col-span-2">
             <div class="flex justify-center md:justify-end">
-                <a href="#" class="text-primary btn  border-primary md:border-2 hover:bg-primary hover:text-white transition ease-in duration-300">LogIn</a>
-                <a href="#" class="text-primary ml-2 btn  border-primary md:border-2 hover:bg-primary hover:text-white transition ease-in duration-300">SignOut</a>
+                <a href="#"
+                    class="text-primary btn  border-primary md:border-2 hover:bg-primary hover:text-white transition ease-in duration-300">LogIn</a>
+                <a href="#"
+                    class="text-primary ml-2 btn  border-primary md:border-2 hover:bg-primary hover:text-white transition ease-in duration-300">SignOut</a>
             </div>
 
             <header>
@@ -66,21 +70,19 @@
                 <div class="mt-8 grid  lg:grid-cols-3 gap-10">
                     <!-- cards  -->
                     <div class="card hover:shadow-lg">
-                        <img class="w-full h-32 sm
-                        :h-48 object-cover"
+                        <img class="w-full h-32 sm:h-48 object-cover"
                             src=https://images.pexels.com/photos/13988870/pexels-photo-13988870.jpeg?auto=compress&cs=tinysrgb&w=600"
                             alt="semo & efo">
                         <div>
                             <span class="font-semibold">QUISINE</span>
-                            <span  class="font-light block">Product description</span>
+                            <span class="font-light block">Product description</span>
                         </div>
                         <div class="badge ">
                             <i class="fa-solid fa-clock"></i> <span class=""> 25 mins</span>
                         </div>
                     </div>
                     <div class="card hover:shadow-lg">
-                        <img class="w-full h-32 sm
-                        :h-48 object-cover"
+                        <img class="w-full h-32 sm:h-48 object-cover"
                             src="https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=600"
                             alt="semo & efo">
                         <div>
@@ -92,8 +94,7 @@
                         </div>
                     </div>
                     <div class="card hover:shadow-lg">
-                        <img class="w-full h-32 sm
-                        :h-48 object-cover"
+                        <img class="w-full h-32 sm:h-48 object-cover"
                             src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=600"
                             alt="semo & efo">
                         <div>
@@ -108,55 +109,92 @@
 
                 <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Most Popular Recipes</h4>
 
-                 <div class="mt-8 grid  lg:grid-cols-3 gap-10">
+                <div class="mt-8 grid  lg:grid-cols-3 gap-10">
                     <!-- cards  -->
                     <div class="card hover:shadow-lg">
-                        <img class="w-full h-32 sm
+                        <a href="#"><img class="w-full h-32 sm hover:scale-125
                         :h-48 object-cover"
-                            src="https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&w=600"
-                            alt="semo & efo">
+                                src="https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="semo & efo"></a>
                         <div>
-                            <span class="font-semibold">QUISINE</span>
-                            <span class="font-light block">Product description</span>
+                            <span class="font-semibold mt-4">QUISINE</span>
+                              <span class="font-light block">"Sed ut perspiciatis unde omnis iste natus error sit
+                                voluptatem accusantium doloremque laudantium, totam rem aperiam, 
+                                <span class="moreText hidden">Neque porro quisquam est, qui
+                                dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
+                                eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut
+                                enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+                                nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
+                                ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum
+                                fugiat quo voluptas nulla pariatur?"</span>
+                                 </span>
+                                <div  class="loadMore mx-0 rounded-l-none rounded-r-full px-3 py-2 cursor-pointer bg-secondary-100 my-4 w-fit text-seconday-200 hover:shadow-inner hover:bg-opacity-50 transform hover:scale-110 m-4">
+                                Learn More
+                                </div>
                         </div>
                         <div class="badge ">
                             <i class="fa-solid fa-clock"></i> <span class=""> 25 mins</span>
                         </div>
                     </div>
                     <div class="card hover:shadow-lg">
-                        <img class="w-full h-32 sm
+                        <a href="#"><img class="w-full h-32 sm hover:scale-125
                         :h-48 object-cover"
-                            src="https://media.istockphoto.com/id/1295633127/photo/grilled-chicken-meat-and-fresh-vegetable-salad-of-tomato-avocado-lettuce-and-spinach-healthy.jpg?s=612x612&w=0&k=20&c=Qa3tiqUCO4VpVMQDXLXG47znCmHr_ZIdoynViJ8kW0E="
-                            alt="semo & efo">
-                        <div>
-                            <span class="font-semibold">QUISINE</span>
-                            <span class="font-light block">Product description</span>
+                                src="https://media.istockphoto.com/id/1295633127/photo/grilled-chicken-meat-and-fresh-vegetable-salad-of-tomato-avocado-lettuce-and-spinach-healthy.jpg?s=612x612&w=0&k=20&c=Qa3tiqUCO4VpVMQDXLXG47znCmHr_ZIdoynViJ8kW0E="
+                                alt="semo & efo"></a>
+                             <div>
+                            <span class="font-semibold mt-4">QUISINE</span>
+                              <span class="font-light block">"Sed ut perspiciatis unde omnis iste natus error sit
+                                voluptatem accusantium doloremque laudantium, totam rem aperiam, 
+                                <span class="moreText hidden">Neque porro quisquam est, qui
+                                dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
+                                eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut
+                                enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+                                nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
+                                ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum
+                                fugiat quo voluptas nulla pariatur?"</span>
+                                 </span>
+                                <div  class="loadMore mx-0 rounded-l-none rounded-r-full px-3 py-2 cursor-pointer bg-secondary-100 my-4 w-fit text-seconday-200 hover:shadow-inner hover:bg-opacity-50 transform hover:scale-110 m-4">
+                                Learn More
+                                </div>
                         </div>
                         <div class="badge ">
                             <i class="fa-solid fa-clock"></i> <span class=""> 25 mins</span>
                         </div>
                     </div>
                     <div class="card hover:shadow-lg">
-                        <img class="w-full h-32 sm
+                        <a href="#"> <img class="w-full h-32 sm hover:scale-125
                         :h-48 object-cover"
-                            src="https://media.istockphoto.com/id/1088970676/photo/grilled-chicken-breast-fillet-and-fresh-vegetable-salad-of-lettuce-arugula-spinach-cucumber.jpg?s=612x612&w=0&k=20&c=zBm23HGvkqpNkOeDvJa9F7TvaxxFKXCRJNaCnQNVISg="
-                            alt="semo & efo">
-                        <div>
-                            <span class="font-semibold">QUISINE</span>
-                            <span class="font-light block">Product description</span>
+                                src="https://media.istockphoto.com/id/1088970676/photo/grilled-chicken-breast-fillet-and-fresh-vegetable-salad-of-lettuce-arugula-spinach-cucumber.jpg?s=612x612&w=0&k=20&c=zBm23HGvkqpNkOeDvJa9F7TvaxxFKXCRJNaCnQNVISg="
+                                alt="semo & efo"></a>
+                     <div>
+                            <span class="font-semibold mt-4">QUISINE</span>
+                              <span class="font-light block">"Sed ut perspiciatis unde omnis iste natus error sit
+                                voluptatem accusantium doloremque laudantium, totam rem aperiam, 
+                                <span class="moreText hidden">Neque porro quisquam est, qui
+                                dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
+                                eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut
+                                enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+                                nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
+                                ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum
+                                fugiat quo voluptas nulla pariatur?"</span>
+                                 </span>
+                                <div  class="loadMore mx-0 rounded-l-none rounded-r-full px-3 py-2 cursor-pointer bg-secondary-100 my-4 w-fit text-seconday-200 hover:shadow-inner hover:bg-opacity-50 transform hover:scale-110 m-4">
+                                Learn More
+                                </div>
                         </div>
                         <div class="badge ">
                             <i class="fa-solid fa-clock"></i> <span class=""> 25 mins</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex justify-center">
-                    <div class="bg-secondary-100 my-4 text-seconday-200 btn hover:shadow-inner hover:bg-opacity-50 transform hover:scale-125 transition duration-300">
+
+                <!-- <div class="flex justify-center">
+                    <div
+                        class="bg-secondary-100 my-4 text-seconday-200 btn hover:shadow-inner hover:bg-opacity-50 transform hover:scale-125 transition duration-300">
                         Load More
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <div class="text-gray-400 text-sm">
                 Created by Ibrahim © 2023.
@@ -164,7 +202,7 @@
         </main>
     </div>
 
-        <script src="index.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
