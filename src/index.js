@@ -1,7 +1,9 @@
 const burger = document.querySelector("#burger");
 const menu = document.querySelector("#menu");
-// const learnMore = document.querySelectorAll(".loadMore");
-// const moreText = document.querySelectorAll(".moreText");
+
+let slides = document.getElementById("descriptionText");
+let slidesR = document.getElementById("reviewAspect");
+
 
 burger.addEventListener("click",function(){
     if(menu.classList.contains("hidden", )){
@@ -12,14 +14,18 @@ burger.addEventListener("click",function(){
     }
 });
 
-// loadMore.addEventListener("click",() => {
-//     let loadMore = [ ];
+description.addEventListener("click", () =>{
+    slidesR.style.display = "none";
+    slides.style.display = "block"
+})
+    
 
-// for (let i = 0; i <= loadMore.length; learnMore++) {
-//        if (moreText.classList.contains("hidden")) {
-//          moreText.classList.remove("hidden");
-//        } else {
-//          moreText.classList.add("hidden");
-//        }
-// }
-// })
+review.addEventListener("click", () =>{
+     slidesR.style.display = "block";
+         slides.style.display = "none";
+})
+
+
+
+
+
