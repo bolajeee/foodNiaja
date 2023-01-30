@@ -103,7 +103,7 @@
                     <span>ADD TO CART</span>
                 </div>
 
-                <div class="flex gap-4 my-2">
+                <div class="flex gap-4 my-2 ">
                     <a href="#"> <i class="fa-brands w-3 hover:scale-125 fa-pinterest"> </i></a>
                     <a href="#"> <i class="fa-brands hover:scale-125 fa-facebook"></i></a>
                     <a href="#"> <i class="fa-brands hover:scale-125 fa-twitter"></i></a>
@@ -126,78 +126,127 @@
                     culpa qui officia deserunt mollit anim id est laborum."</span>
             </div>
 
-            <div> <!--reviews aspect-->
-                <div class="hidden mySlides" id="reviewAspect"><!--reviews text-->
-                    <div>
-                        <img src="" alt="">
-                        <h3>White Luwis</h3>
-                        <span>rating</span>
-                        <span>Reply</span>
-                        <span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+            <div class="flex"> <!--reviews aspect-->
+                <div class="hidden mySlides col-span-2" id="reviewAspect"><!--reviews text-->
+                     <div class="flex">
+                        <div class="w-44">
+                        <img src="https://images.pexels.com/photos/1674752/pexels-photo-1674752.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                        </div>
+                        <div class="block px-4">
+                            <div class="flex">
+                            <h3 class="text-2xl text-gray-700">White Luwis</h3>
+                           
+                            <span class="px-4">
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                        </span>
+                        
+                        </div>
+                        <span class="block">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                             laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
                             architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
                             aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
                             voluptatem sequi nesciunt.</span>
-                    </div>
-                    <div>
-                        <img src="" alt="">
-                        <h3>White Luwis</h3>
-                        <span>rating</span>
-                        <span>Reply</span>
-                        <span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            
+                            </div>
+                          <div class="px-4">  <span>Reply</span>
+                    </div></div>
+
+
+                                 <div class="flex py-4">
+                        <div class="w-44 ml-10">
+                        <img src="https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                        </div>
+                        <div class="block px-4">
+                            <div class="flex">
+                            <h3 class="text-2xl text-gray-700">White Luwis</h3>
+                           
+                            <span class="px-4">
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                        </span>
+                        
+                        </div>
+                        <span class="block col-span-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                             laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
                             architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
                             aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
                             voluptatem sequi nesciunt.</span>
+                            
+                            </div>
+                            <div class="px-4">
+                            <span>Reply</span>
                     </div>
+                        </div>
                 </div>
 
-                <div> <!--reviews form-->
-                    <h3>ADD A REVIEW</h3>
-                    <span>Your Rating: </span>
+                <div class="col-span-1"> <!--reviews form-->
+                    <h3 class="text-lg my-4 text-gray-700">ADD A REVIEW</h3>
+                    <span>Your Rating:    <div class="flex gap-4 my-2 ">
+                    <a href="#"> <i class="fa-brands w-3 hover:scale-125 fa-pinterest"> </i></a>
+                    <a href="#"> <i class="fa-brands hover:scale-125 fa-facebook"></i></a>
+                    <a href="#"> <i class="fa-brands hover:scale-125 fa-twitter"></i></a>
+                    <a href="#"> <i class="fa-solid hover:scale-125 fa-envelope"></i></a>
+                </div>
+</span>
                     <form action="">
+                        <div class="flex">
                         <label for="Name">
-                            <input type="text" placeholder="Name">
+                            <input type="text" placeholder="Name" class="bg-gray-300 border-gray-900 border w-60 py-3 px-2 my-2 ">
                         </label>
                         <label for="Email">
-                            <input type="email" placeholder="Email" name="" id="">
+                            <input type="email" placeholder="Email" class="bg-gray-300 border-gray-900 border ml-2 w-60 py-3 px-2 my-2 " name="" id="">
                         </label>
-                        <div>
-                            <textarea placeholder="Message" name="" id="" cols="30" rows="10"></textarea>
+                        </div><div>
+                            <textarea placeholder="Message" name="" id="" class="bg-gray-300 border-gray-900 border py-3 px-2 my-2 w-full" cols="" rows="10"></textarea>
                         </div>
 
-                        <div>
-                            <span>SUBMIT</span>
+                        <div class="rounded-full flex justify-center font-extrabold bg-gray-900 w-auto px-3 py-3 hover:scale-110 mb-4 cursor-pointer tracking-widest ">
+                            <span >SUBMIT</span>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
 
-        <div>
-            <hr><span>RELATED PRODUCTS</span>
-            <hr>
+        <div class="flex items-center gap-4 justify-center my-4" >
+             <hr class="w-7 text-black border-y-2">
+            <span class="text-2xl font-extrabold">RELATED PRODUCTS</span >
+             <hr class="w-7 text-black border-y-2">
         </div>
 
         <div class="grid grid-cols-3 justify-center md:flex gap-10"><!--Team cards-->
-            <div class="w-44">
-                <img class=" shadow-md"
-                    src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600"
-                    alt="">
+            <div class="w-56 h-44 ">
+                <img class=" shadow-md object-cover overflow-hidden"
+                                               src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=600"
+ alt="">
                 <h3 class="flex justify-center">Title</h3>
                 <span class="flex justify-center">Position in the company</span>
             </div>
-            <div class="w-44">
-                <img class=" shadow-md"
-                    src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600"
-                    alt="">
+            <div class="w-56 h-44 ">
+                <img class=" shadow-md object-cover overflow-hidden"
+                                                src="https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&w=600"
+alt="">
                 <h3 class="flex justify-center">Title</h3>
                 <span class="flex justify-center">Position in the company</span>
             </div>
-            <div class="w-44">
-                <img class=" shadow-md"
-                    src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600"
-                    alt="">
+            <div class="w-56 h-44 ">
+                <img class=" shadow-md object-cover overflow-hidden"
+                                              src=https://images.pexels.com/photos/13988870/pexels-photo-13988870.jpeg?auto=compress&cs=tinysrgb&w=600"
+alt="">
+                <h3 class="flex justify-center">Title</h3>
+                <span class="flex justify-center">Position in the company</span>
+            </div>
+               <div class="w-56 h-44 ">
+                <img class=" shadow-md object-cover overflow-hidden"
+                                             src="https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=600"
+alt="">
                 <h3 class="flex justify-center">Title</h3>
                 <span class="flex justify-center">Position in the company</span>
             </div>
