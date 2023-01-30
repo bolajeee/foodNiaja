@@ -3,6 +3,7 @@ const menu = document.querySelector("#menu");
 
 let slides = document.getElementById("descriptionText");
 let slidesR = document.getElementById("reviewAspect");
+let slideF = document.getElementById("reviewForm");
 
 
 burger.addEventListener("click",function(){
@@ -16,13 +17,16 @@ burger.addEventListener("click",function(){
 
 description.addEventListener("click", () =>{
     slidesR.style.display = "none";
+    slideF.style.display = "none"
     slides.style.display = "block"
+    this.classList.add("underline");
 })
     
 
 review.addEventListener("click", () =>{
      slidesR.style.display = "block";
          slides.style.display = "none";
+    slideF.style.display = "block";
 })
 
 
