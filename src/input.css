@@ -23,3 +23,8 @@
 .header{
     @apply text-2xl font-extrabold uppercase; 
 }
+
+.gridProducts
+{
+    @apply sm:block md:grid grid-cols-3 gap-5 my-4;
+}
