@@ -82,7 +82,7 @@
     </div>
 
     <main class="px-16 py-6 md:col-span-2">
-        <div class="grid grid-cols-2 gap-5">
+        <div class="block md:grid grid-cols-2 gap-5">
 
             <div class="relative">
                 <img src="https://media.istockphoto.com/id/1088970676/photo/grilled-chicken-breast-fillet-and-fresh-vegetable-salad-of-lettuce-arugula-spinach-cucumber.jpg?s=612x612&w=0&k=20&c=zBm23HGvkqpNkOeDvJa9F7TvaxxFKXCRJNaCnQNVISg=" alt="">
@@ -106,7 +106,7 @@
                 </ul>
 
                 <div class="flex gap-5 items-center">
-                    <span class="bg-gray-200 px-2 py-1 tracking-widest">- 2 +</span>
+                    <span class="bg-gray-200 px-2 py-1 -tracking-tighter text-xs md:tracking-widest">- 2 +</span>
                     <span>ADD TO CART</span>
                 </div>
 
@@ -122,8 +122,8 @@
         </div>
 
         <div class="my-4 flex justify-center slideshow-container ">
-            <h2 class="text-gray-300  hover:text-gray-700 transition ease-in-out duration-600 user text-2xl font-semibold cursor-pointer " id="description">Description</h2>
-            <h2 class="text-gray-300 ml-10 text-2xl font-semibold hover:text-gray-700 transition ease-in-out duration-600 cursor-pointer " id="review"> Reviews</h2>
+            <h2 onclick="a" class="text-gray-700 transition ease-in-out duration-600 user text-2xl font-semibold cursor-pointer " id="description">Description</h2>
+            <h2 class="text-gray-700 ml-10 text-2xl font-semibold transition ease-in-out duration-600 cursor-pointer " id="review"> Reviews</h2>
         </div>
             <div class="mySlidesDescription" id="descriptionText"><!--description aspect-->
                 <span>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -148,8 +148,8 @@
                             voluptatem sequi nesciunt"</span>
             </div>
 
-            <div class="flex"> <!--reviews aspect-->
-                <div class="hidden mySlides col-span-2" id="reviewAspect"><!--reviews text-->
+            <div class="sm:block lg:flex "> <!--reviews aspect-->
+                <div class=" mySlides col-span-2 hidden" id="reviewAspect"><!--reviews text-->
                      <div class="flex">
                         <div class="w-44">
                         <img src="https://images.pexels.com/photos/1674752/pexels-photo-1674752.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
@@ -207,34 +207,37 @@
                     </div>
                         </div>
                 </div>
-
-                <div class=" col-span-1 hidden sm
-                :block lg:flex" id="reviewForm"> <!--reviews form-->
-                    <h3 class="font-bold text-lg mb-4 text-gray-700">ADD A REVIEW</h3>
-                    <span>Your Rating:    
-                    <div class="flex gap-4 my-2 ">
+                <div class="hidden" id="reviewForm"> <!--reviews form-->
+                <div class="col-span-1  sm:block lg:flex">
+                    <h3 class="font-bold text-lg mb-4 text-gray-700 ">ADD A REVIEW</h3>
+                    <div class="block">
+                    <span >Your Rating:    
+                    <div class="flex gap-4 my-2">
                     <a href="#"> <i class="fa-brands w-3 hover:scale-125 fa-pinterest"> </i></a>
                     <a href="#"> <i class="fa-brands hover:scale-125 fa-facebook"></i></a>
                     <a href="#"> <i class="fa-brands hover:scale-125 fa-twitter"></i></a>
                     <a href="#"> <i class="fa-solid hover:scale-125 fa-envelope"></i></a>
-                </div>
-</span>  <!--this part is meant to have the outline on but it only switches on click-->
+                 </div>
+                    </span>  <!--this part is meant to have the outline on but it only switches on click-->
+                    </div>
                     <form action="">
-                        <div class="flex">
+                        <div class="block md:flex justify-between">
                         <label for="Name">
-                            <input type="text" placeholder="Name" class="bg-gray-300 border-gray-900 w-60 py-3 px-2 my-2 ">
+                            <input type="text" placeholder="Name" class="bg-gray-300 border-gray-900 border-2 sm:w-full py-3 px-2 my-2 ">
                         </label>
                         <label for="Email">
-                            <input type="email" placeholder="Email" class="bg-gray-300 border-gray-900 border ml-2 w-60 py-3 px-2 my-2 " name="" id="">
+                            <input type="email" placeholder="Email" class="bg-gray-300 border-gray-900 border-2 sm:w-full py-3 px-2 my-2 md:gap-3" name="" id="">
                         </label>
-                        </div><div>
-                            <textarea placeholder="Message" name="" id="" class="bg-gray-300 border-gray-900 border py-3 px-2 my-2 w-full" cols="" rows="10"></textarea>
+                        </div>
+                        <div>
+                            <textarea placeholder="Message" name="" id="" class="bg-gray-300 border-gray-900 border-2 py-3 px-2 my-2 w-full" cols="" rows="10"></textarea>
                         </div>
 
                         <div class="rounded-full flex justify-center font-extrabold bg-gray-900 w-auto px-3 py-3 hover:scale-110 mb-4 cursor-pointer tracking-widest ">
                             <span >SUBMIT</span>
                         </div>
                     </form>
+                </div>
                 </div>
             </div>
         </div>

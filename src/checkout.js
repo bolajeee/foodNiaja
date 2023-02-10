@@ -7,13 +7,17 @@ description.addEventListener("click", () => {
   slidesR.style.display = "none";
   slideF.style.display = "none";
   slides.style.display = "block";
-  this.classList.add("underline");
+  description.classList.add("underline")
+  review.classList.remove("underline");
 });
 
 review.addEventListener("click", () => {
   slidesR.style.display = "block";
   slides.style.display = "none";
   slideF.style.display = "block";
+  review.classList.add("underline");
+  description.classList.remove("underline")
+  slidesR.classList.remove("hidden")
 });
 
 
