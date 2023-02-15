@@ -148,7 +148,7 @@
                             voluptatem sequi nesciunt"</span>
             </div>
 
-            <div class="sm:block lg:flex  lg:flex-col"> <!--reviews aspect-->
+            <div class="block lg:flex-col"> <!--reviews aspect-->
                 <div class=" mySlides col-span-2 hidden" id="reviewAspect"><!--reviews text-->
                      <div class="flex">
                         <div class="w-44">
@@ -220,23 +220,24 @@
                  </div>
                     </span>  <!--this part is meant to have the outline on but it only switches on click-->
                     </div>
-                    <form action="">
-                        <div class=" flex flex-col sm:flex-row ">
-                        <label for="Name">
-                            <input type="text" placeholder="Name" class="bg-gray-300 border-gray-900 border-2 sm:w-full py-3 px-2 my-2 ">
-                        </label>
-                        <label for="Email">
-                            <input type="email" placeholder="Email" class="bg-gray-300 border-gray-900 border-2 sm:w-full py-3 px-2 my-2 md:gap-3" name="" id="">
-                        </label>
+                  
+                     
+
+                        <div class="block md:flex">
+                            <input type="text" placeholder="Name"  class="w-full bg-gray-300 border-gray-900 border-2 py-3 px-2 md:mr-3 my-2"/>
+                          
+                            <input type="email" placeholder="Email"  class="w-full bg-gray-300 border-gray-900 border-2 py-3 px-2 my-2 md:ml-3"/>
                         </div>
+
+
                         <div>
-                            <textarea placeholder="Message" name="" id="" class="bg-gray-300 border-gray-900 border-2 py-3 px-2 my-2 w-full" cols="" rows="10"></textarea>
+                            <textarea placeholder="Message" name="" id="" class="bg-gray-300 border-gray-900 border-2 py-3 px-2 mr-2 my-2 w-full" cols="" rows="10"></textarea>
                         </div>
 
                         <div class="rounded-full flex justify-center font-extrabold bg-gray-900 w-auto px-3 py-3 hover:scale-110 mb-4 cursor-pointer tracking-widest ">
                             <span >SUBMIT</span>
                         </div>
-                    </form>
+                   
                 </div>
                 </div>
             </div>

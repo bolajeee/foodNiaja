@@ -3,44 +3,48 @@ let bestAspect = document.getElementById("bestAspect");
 let salesAspect = document.getElementById("salesAspect");
 
 
-newArrivals.addEventListener("click", ()=>{
-     bestAspect.classList.add("hidden");
-     salesAspect.classList.add("hidden");
-     if(newArrivals.classList.contains("underline")){
-           newArrivals.classList.remove("underline");
-          
-}else{
-  newArrivals.classList.add("underline");
-}
-    bestSales.classList.remove("underline");
-    salesItems.classList.remove("underline");
-}) 
+newArrivals.addEventListener("click", () => {
+  newAspect.classList.remove("hide");
+  bestAspect.classList.add("hide");
+  salesAspect.classList.add("hide");
 
-bestSales.addEventListener("click", ()=>{
-        newAspect.classList.add("hidden");
-        bestAspect.classList.remove("hidden");
-        salesAspect.classList.add("hidden");
+  if (newArrivals.classList.contains("under-rule")) {
+    newArrivals.classList.remove("under-rule");
 
-            if(bestSales.classList.contains("underline")){
-      bestSales.classList.remove("underline")
-
-}else{
-  bestSales.classList.add("underline");}
-    newArrivals.classList.remove("underline");
-    salesItems.classList.remove("underline");
+  } else {
+    newArrivals.classList.add("under-rule");
+  }
+  bestSales.classList.remove("under-rule");
+  salesItems.classList.remove("under-rule");
 })
 
-salesItems.addEventListener("click", ()=>{
-        newAspect.classList.add("hidden");
-        bestAspect.classList.add("hidden");
-        salesAspect.classList.remove("hidden");
-        
-            if(salesItems.classList.contains("underline")){
-      salesItems.classList.remove("underline")
-}else{
-  salesItems.classList.add("underline");}
-    bestSales.classList.remove("underline");
-    newArrivals.classList.remove("underline");
+bestSales.addEventListener("click", () => {
+  newAspect.classList.add("hide");
+  bestAspect.classList.remove("hide")
+  salesAspect.classList.add("hide");
+
+  if (bestSales.classList.contains("under-rule")) {
+    bestSales.classList.remove("under-rule")
+
+  } else {
+    bestSales.classList.add("under-rule");
+  }
+  newArrivals.classList.remove("under-rule");
+  salesItems.classList.remove("under-rule");
+})
+
+salesItems.addEventListener("click", () => {
+  newAspect.classList.add("hide");
+  bestAspect.classList.add("hide");
+  salesAspect.classList.remove("hide");
+
+  if (salesItems.classList.contains("under-rule")) {
+    salesItems.classList.remove("under-rule")
+  } else {
+    salesItems.classList.add("under-rule");
+  }
+  bestSales.classList.remove("under-rule");
+  newArrivals.classList.remove("under-rule");
 })
 
 const burger = document.querySelector("#burger");

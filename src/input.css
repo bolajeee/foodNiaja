@@ -16,8 +16,8 @@
     @apply rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer  tracking-wider;
 }
 
-.underline{
-    @apply border-b-2 border-gray-800;
+.under-rule{
+    @apply border-b-2 border-gray-600;
 }
 
 .header{
@@ -27,4 +27,8 @@
 .gridProducts
 {
     @apply sm:block md:grid grid-cols-3 gap-5 my-4;
+}
+
+.hide{
+    @apply  hidden;
 }
