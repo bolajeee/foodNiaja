@@ -64,28 +64,27 @@ const hrs = document.getElementById("hrs");
 const mins = document.getElementById("mins");
 const secs = document.getElementById("secs");
 
-const date = new Date();
+ const newTime = new Date("Jan 5, 2024 15:37:25").getTime;
 
-const currentYR = date.toDateString();
+ function countdownTimer(){
+  const now = new Date().getTime();
+  const diff = newTime - now;
 
-const newYrTime =  (date + 1);
-
-
-function countdownTimer(){
-  const currentTime = new Date();
-  const diff = newYrTime - currentTime;
-
-
-const d = Math.floor(diff / 1000 /60 / 60 / 24);
-const h = Math.floor((diff / 1000 / 60 / 60) % 24);
-const m = Math.floor((diff / 1000 / 60 ) % 60);
-const s = Math.floor((diff / 1000) % 60);
+   let d = Math.floor(diff / (1000 * 60 * 60 * 24));
+   let h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)  );
+   let m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+   let s = Math.floor((diff % (1000 * 60)) / 1000);
 
 
-days.innerText = d;
-hrs.innerText = h;
-mins.innerText = m;
-secs.innerText = s;
+   console.log(d)
+   days.innerText = d;
+   hrs.innerText = h;
+   mins.innerText = m;
+   secs.innerText = s;
 
+    if (diff < 0) {
+      clearInterval(countdownTimer);
+      document.getElementById("time").innerHTML = "EXPIRED";
+    }
 }
 setInterval(countdownTimer,1000);
