@@ -1,15 +1,15 @@
-const burger = document.querySelector("#burger");
-const menu = document.querySelector("#menu");
+const burgerIcon = document.querySelector("#burger");
+const menuIcon = document.querySelector("#menu");
 
 
 
 
-burger.addEventListener("click",function(){
-    if(menu.classList.contains("hidden", )){
-        menu.classList.remove("hidden", );
+burgerIcon.addEventListener("click",function(){
+    if(menuIcon.classList.contains("hidden", )){
+        menuIcon.classList.remove("hidden", );
 
     } else{
-        menu.classList.add("hidden", );
+        menuIcon.classList.add("hidden", );
     }
 });
 

@@ -64,7 +64,7 @@ const hrs = document.getElementById("hrs");
 const mins = document.getElementById("mins");
 const secs = document.getElementById("secs");
 
- const newTime = new Date("Jan 5, 2024 15:37:25").getTime;
+ const newTime = new Date("Feb 24, 2023 15:37:25").getTime();
 
  function countdownTimer(){
   const now = new Date().getTime();
@@ -75,8 +75,6 @@ const secs = document.getElementById("secs");
    let m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
    let s = Math.floor((diff % (1000 * 60)) / 1000);
 
-
-   console.log(d)
    days.innerText = d;
    hrs.innerText = h;
    mins.innerText = m;
@@ -88,3 +86,6 @@ const secs = document.getElementById("secs");
     }
 }
 setInterval(countdownTimer,1000);
+
+//slide show
+
