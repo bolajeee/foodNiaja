@@ -85,28 +85,45 @@
     <main class="px-16 py-6 md:col-span-2">
 
 
-        <div> <!--banner slideshow-->
-            <div class="mySlides fade" id="mySlides">
-                <img src="" alt="">
+        <div class=""> <!--banner slideshow-->
+            <div class="mySlides fade hidden grid-cols-3 gap-5" id="mySlides">
+                <div class="">
+                <span class="tetx-xl md:text-2xl font-extrabold text-gray-900 block">Nutritional and healthy</span>
+                <span class="text-sm md:text-xl font-semibold md:font-bold text-gray-900">100% Organic food collection</span>
+                <span class="btn block bg-gray-900 w-fit my-2 md:my-4">Shop Now</span>   
+               </div>
 
-                <span>Nutritional and healthy</span>
-                <span>100% Organic food collection</span>
+               <div class="">
+                <img src="https://media.istockphoto.com/id/1455375303/photo/food-photos-various-entrees-appetizers-deserts-etc.jpg?s=612x612&w=0&k=20&c=PRiZnJemrfSFNbo9xRrwYQykK30hF_3u6M2_NbB7o2I=" alt="">
+                </div>
 
-                <span>Shop Now</span>
+                              <div class="">
+                <img src="https://media.istockphoto.com/id/1321284698/photo/variety-of-food-ready-to-eat.jpg?s=612x612&w=0&k=20&c=RxqfHIorN_btwKhsES89DEAhKW6St7wenVPE4lRmYAk=" alt="">
+</div>
             </div>
 
-            <div class="mySlides fade" id="mySlides">
-                <img src="" alt="">
+            <div class="mySlides transition ease-out duration-1000 hidden md:grid grid-cols-3 gap-5" id="mySlides">
+                 
 
-                <span>Nutritional and healthy</span>
-                <span>100% Organic food collection</span>
-
-                <span>Shop Now</span>
+               <div class="">
+                <img src="https://media.istockphoto.com/id/1321284698/photo/variety-of-food-ready-to-eat.jpg?s=612x612&w=0&k=20&c=RxqfHIorN_btwKhsES89DEAhKW6St7wenVPE4lRmYAk=" alt="">
+</div>
+ <div class="">
+                <img src="https://media.istockphoto.com/id/1455375303/photo/food-photos-various-entrees-appetizers-deserts-etc.jpg?s=612x612&w=0&k=20&c=PRiZnJemrfSFNbo9xRrwYQykK30hF_3u6M2_NbB7o2I=" alt="">
+                </div>
+               
+                    <div class="">
+                <span class="tetx-xl md:text-2xl font-extrabold text-gray-900 block">Nutritional and healthy</span>
+                <span class="text-sm md:text-xl font-semibold md:font-bold text-gray-900">100% Organic food collection</span>
+                <span class="btn block bg-gray-900 w-fit my-2 md:my-4">Shop Now</span>   
+               </div>
             </div>
 
-            <a class="prev btn" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next btn" onclick="plusSlides(1)">&#10095;</a>
+            <div class="my-4">
+            <a class="prev btn transition ease-out duration-5000  top-2 rounded-full bg-gray-900 text-white w-fit" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next btn transition ease-out duration-5000  right-0 rounded-full bg-gray-900 text-white w-fit" onclick="plusSlides(1)">&#10095;</a>
         </div>
+
         </div>
 
         <div class="text-center justify-evenly grid grid-cols-2 md:flex gap-5 delivery my-4">
@@ -412,6 +429,37 @@
 
         </div>
 
+        
+        <div class=""><!--timer aspect-->
+    
+            <div class="">
+            <h1 class="header flex justify-center text-2xl border-b">Deal of the day</h1>
+            <div class="flex text-2xl justify-evenly my-4 px-4 py-4 text-gray-300 bg-gray-900"> <!--timer-->
+                 <div class="time">
+                    <h2 id="days">00</h2>
+                    <span>Days</span>
+                 </div>
+                 <div class="time">
+                    <h2 id="hrs">00</h2>
+                    <span>Hrs</span>
+                 </div>
+                 <div class="time">
+                    <h2 id="mins">00</h2>
+                    <span>Mins</span>
+                 </div>
+                     <div class="time">
+                    <h2 id="secs">00</h2>
+                    <span>Secs</span>
+                 </div>
+            </div>
+
+             <div class="bg-gray-900 btn px-2 py-2  my-4 hover:scale-95 flex justify-center">
+                <span class="text-xl">Shop Now</span>
+            </div>
+            </div >
+            
+        </div>
+
         <div class="grid grid-cols-3 gap-5 my-6"><!--GRID SWATCH-->
 
             <div class="col-span-1">
@@ -455,77 +503,11 @@
 
         </div>
         
-         <div class="relative overflow-hidden">
-            <div>
-                <img class="w-full rounded-md shadow-lg object-cover hover:scale-110" src="https://images.pexels.com/photos/1213710/pexels-photo-1213710.jpeg?auto=compress&cs=tinysrgb&w=600"
-                    alt="">
-                 </div>
-                       <div class="absolute mx-5 top-0 right-0 z-10  text-gray-200 hover:cursor-pointer hover:scale-105 text-sm md:text-xl">
-                                <span class="block">title</span>
-                                <span>Priced: $$$</span>
-                                <i class="fa-regular fa-circle-right"></i>
-                            </div>
-            </div>
+
         </div>
 
 
-        <div class=""><!--timer aspect-->
-    
-            <div class="">
-            <h1 class="header flex justify-center text-2xl border-b">Deal of the day</h1>
-            <div class="flex text-2xl justify-evenly my-4 px-4 py-4 text-gray-300 bg-gray-900"> <!--timer-->
-                 <div class="time">
-                    <h2 id="days">00</h2>
-                    <span>Days</span>
-                 </div>
-                 <div class="time">
-                    <h2 id="hrs">00</h2>
-                    <span>Hrs</span>
-                 </div>
-                 <div class="time">
-                    <h2 id="mins">00</h2>
-                    <span>Mins</span>
-                 </div>
-                     <div class="time">
-                    <h2 id="secs">00</h2>
-                    <span>Secs</span>
-                 </div>
-            </div>
-
-             <div class="bg-gray-900 btn px-2 py-2  my-4 hover:scale-95 flex justify-center">
-                <span class="text-xl">Shop Now</span>
-            </div>
-            </div >
-            
-        </div>
-       
-        <div><!--slideshow-->
-            <div>
-                <img src="" alt="">
-                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minimLorem ipsum dolor sit amet, consectetur adipisicing
-                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</span>
-            </div>
-
-            <div>
-                <img src="" alt="">
-                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minimLorem ipsum dolor sit amet, consectetur adipisicing
-                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</span>
-            </div>
-
-            <div>
-                <img src="" alt="">
-                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minimLorem ipsum dolor sit amet, consectetur adipisicing
-                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</span>
-            </div>
-            <div>
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-        </div>
-
+<hr>
 
         <div class="flex justify-center mt-14 mb-4 items-center">
             <div

@@ -16,6 +16,16 @@ module.exports = {
       },
       fontFamily: {
         body: ["nunito"]
+      },
+      animation: {
+        fade : "fade 1.5s linear"
+      },
+      keyframes:{
+        fade:{
+          "0%" : {opacity: .4},
+          "50%" : {opacity: .7},
+          "100%" : {opacity: 1}
+        }
       }
     },
   },
