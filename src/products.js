@@ -1,7 +1,19 @@
+const burgerIcon2 = document.getElementById("burgerIcon");
+const menuIcon2 = document.getElementById("menuList");
+
+burgerIcon2.addEventListener("click", function () {
+  if (menuIcon2.classList.contains("hidden")) {
+    menuIcon2.classList.remove("hidden");
+  } else {
+    menuIcon2.classList.add("hidden");
+  }
+});
+
+
+
 let newAspect = document.getElementById("newAspect");
 let bestAspect = document.getElementById("bestAspect");
 let salesAspect = document.getElementById("salesAspect");
-
 
 newArrivals.addEventListener("click", () => {
   newAspect.classList.remove("hide");
@@ -10,28 +22,26 @@ newArrivals.addEventListener("click", () => {
 
   if (newArrivals.classList.contains("under-rule")) {
     newArrivals.classList.remove("under-rule");
-
   } else {
     newArrivals.classList.add("under-rule");
   }
   bestSales.classList.remove("under-rule");
   salesItems.classList.remove("under-rule");
-})
+});
 
 bestSales.addEventListener("click", () => {
   newAspect.classList.add("hide");
-  bestAspect.classList.remove("hide")
+  bestAspect.classList.remove("hide");
   salesAspect.classList.add("hide");
 
   if (bestSales.classList.contains("under-rule")) {
-    bestSales.classList.remove("under-rule")
-
+    bestSales.classList.remove("under-rule");
   } else {
     bestSales.classList.add("under-rule");
   }
   newArrivals.classList.remove("under-rule");
   salesItems.classList.remove("under-rule");
-})
+});
 
 salesItems.addEventListener("click", () => {
   newAspect.classList.add("hide");
@@ -39,24 +49,14 @@ salesItems.addEventListener("click", () => {
   salesAspect.classList.remove("hide");
 
   if (salesItems.classList.contains("under-rule")) {
-    salesItems.classList.remove("under-rule")
+    salesItems.classList.remove("under-rule");
   } else {
     salesItems.classList.add("under-rule");
   }
   bestSales.classList.remove("under-rule");
   newArrivals.classList.remove("under-rule");
-})
-
-const burger = document.querySelector("#burger");
-const menu = document.querySelector("#menu");
-
-burger.addEventListener("click", function () {
-  if (menu.classList.contains("hidden")) {
-    menu.classList.remove("hidden");
-  } else {
-    menu.classList.add("hidden");
-  }
 });
+
 
 // timer
 const days = document.getElementById("days");
@@ -64,28 +64,28 @@ const hrs = document.getElementById("hrs");
 const mins = document.getElementById("mins");
 const secs = document.getElementById("secs");
 
- const newTime = new Date("Feb 24, 2023 15:37:25").getTime();
+const newTime = new Date("Feb 27, 2023 15:37:25").getTime();
 
- function countdownTimer(){
+function countdownTimer() {
   const now = new Date().getTime();
   const diff = newTime - now;
 
-   let d = Math.floor(diff / (1000 * 60 * 60 * 24));
-   let h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)  );
-   let m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-   let s = Math.floor((diff % (1000 * 60)) / 1000);
+  let d = Math.floor(diff / (1000 * 60 * 60 * 24));
+  let h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  let s = Math.floor((diff % (1000 * 60)) / 1000);
 
-   days.innerText = d;
-   hrs.innerText = h;
-   mins.innerText = m;
-   secs.innerText = s;
+  days.innerText = d;
+  hrs.innerText = h;
+  mins.innerText = m;
+  secs.innerText = s;
 
-    if (diff < 0) {
-      clearInterval(countdownTimer);
-      document.getElementById("time").innerHTML = "EXPIRED";
-    }
+  if (diff < 0) {
+    clearInterval(countdownTimer);
+    document.getElementById("time").innerHTML = "EXPIRED";
+  }
 }
-setInterval(countdownTimer,1000);
+setInterval(countdownTimer, 1000);
 
 //slide show
 
@@ -115,7 +115,7 @@ function showSlides(n) {
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
- 
+
   slides[slideIndex - 1].style.display = "grid";
- 
 }
+
