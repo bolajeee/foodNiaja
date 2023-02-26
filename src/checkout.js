@@ -17,16 +17,16 @@ description.addEventListener("click", () => {
   slidesR.style.display = "none";
   slideF.style.display = "none";
   slides.style.display = "block";
-  description.classList.add("underline");
-  review.classList.remove("underline");
+  description.classList.add("under-rule");
+  review.classList.remove("under-rule");
 });
 
 review.addEventListener("click", () => {
   slidesR.style.display = "block";
   slides.style.display = "none";
   slideF.style.display = "block";
-  review.classList.add("underline");
-  description.classList.remove("underline");
+  review.classList.add("under-rule");
+  description.classList.remove("under-rule");
   slidesR.classList.remove("hidden");
 });
 
@@ -40,3 +40,23 @@ burger.addEventListener("click", function () {
     menu.classList.add("hidden");
   }
 });
+
+let count = 0;
+const plus = document.querySelector("#plus");
+const minus = document.querySelector("#minus");
+const counter = document.querySelector("#counter")
+
+plus.addEventListener("click",function(){
+  count ++;
+  counter.innerHTML = (count);
+})
+minus.addEventListener("click", function(){
+  count--;
+  counter.innerHTML = (count);
+  if(count <= 0){
+    counter.innerHTML = ("0")
+  }
+})
+
+
+

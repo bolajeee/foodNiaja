@@ -17,47 +17,47 @@
 
 <body class="text-gray-600 font-body w-screen">
 
-    <div class="block md:grid grid-cols-3"> <!-- content wrapper -->
+    <div class="block md:flex"> <!-- content wrapper -->
        
+        <div class="md:flex md:justify-end md:bg-gray-200 md:w-fit">
+            <nav class="">
+                <div class=" flex justify-between">
 
-
-        <div class="md:flex md:justify-end md:bg-gray-200">
-            <nav class="text-right">
-                <div class="flex justify-between items-center ">
                 <div class="font-bold uppercase p-4 border-b border-gray-100 ">
                     <h1><a href="/" class="text-2xl hover:text-gray-800">Food Niaja</a></h1>
                 </div>
-                <div class="px-6 cursor-pointer md:hidden text-2xl " id="burger">
+
+                <div class="px-6 cursor-pointer md:hidden text-2xl mt-4" id="burger">
                     <i class="fa-solid fa-bars"></i>
                 </div>
                 </div>
-                <ul class="text-sm mt-6 hidden md:block " id="menu">
-                    <li class="py-1">
-                        <a href="index.html" class="flex px-4 border-r-4 border-primary md:border-b-4 md:border-l-0 md:py-2 content-end justify-end">
+                <ul class="text-lg mt-6 hidden md:block " id="menu">
+                    <li class="py-1 justify-end flex">
+                        <a href="index.html" class="flex px-4 border-r-4 border-primary shadow-md w-full  md:border-l-0 md:py-2 justify-end md:justify-center">
                             <span class="text-gray-700 font-bold">Home</span>
                          <div class="md:hidden"><i class="fa-solid fa-house mx-2 py-1"></i></div>
                         </a>
                     </li>
                      <li class="py-1">
-                        <a href="product.html" class="flex px-4 border-r-4 border-white content-center justify-end md:border-gray-200">
+                        <a href="product.html" class="flex px-4 border-r-4 border-white justify-end md:justify-center shadow-sm md:border-gray-200">
                             <span >Products</span>
                           <div class="md:hidden">   <i class="fa-solid fa-cart-shopping mx-2 py-1"></i></div>
                         </a>
                     </li>
                       <li class="py-1">
-                        <a href="checkOut.html" class="flex px-4 border-r-4 border-white content-center justify-end md:border-gray-200">
+                        <a href="checkOut.html" class="flex px-4 border-r-4 border-white justify-end md:justify-center shadow-sm md:border-gray-200">
                             <span >Check Out</span>
                           <div class="md:hidden">   <i class="fa-solid fa-bowl-food mx-2 py-1"></i></div>
                         </a>
                     </li>
                     <li class="py-1">
-                        <a href="about.html" class="flex px-4 border-r-4 border-white content-center justify-end md:border-gray-200">
+                        <a href="about.html" class="flex px-4 border-r-4 border-white justify-end md:justify-center shadow-sm md:border-gray-200">
                             <span>About</span>
                          <div class="md:hidden">    <i class="fa-solid fa-circle-question mx-2 py-1"></i></div>
                         </a>
                     </li>
                     <li class="py-1">
-                        <a href="contact.html" class="flex px-4 border-r-4 border-white content-end justify-end md:border-gray-200">
+                        <a href="contact.html" class="flex px-4 border-r-4 border-white  justify-end md:justify-center shadow-sm md:border-gray-200">
                             <span>Contact</span>
                           <div class="md:hidden">   <i class="fa-solid fa-address-book mx-2 py-1"></i></div>
                         </a>
@@ -66,12 +66,11 @@
             </nav>
         </div> <!--end nav -->
 
-
-
-        <main class="px-16 py-6 col-span-2">
+        <main class="px-16 py-6 w-full">
+            
             <div class="flex justify-center md:justify-end ">
-                <a href="#" class="text-primary btn  border-primary md:border-2 hover:bg-primary hover:text-white transition ease-in duration-300">LogIn</a>
-                <a href="#" class="text-primary ml-2 btn  border-primary md:border-2 hover:bg-primary hover:text-white transition ease-in duration-300">SignOut</a>
+                <a href="logIn.html" class="text-primary btn  border-primary md:border-2 hover:bg-primary hover:text-white transition ease-in duration-300">LogIn</a>
+                <a href="logIn.html" class="text-primary ml-2 btn  border-primary md:border-2 hover:bg-primary hover:text-white transition ease-in duration-300">SignOut</a>
             </div>
 
         <header>
@@ -87,6 +86,7 @@
                 <div class="mt-8 grid  lg:grid-cols-3 gap-10">
                     <!-- cards  -->
                     <div class="card hover:shadow-lg">
+                        <a href="checkOut.html">
                         <img class="w-full h-32 sm
                         :h-48 object-cover"
                             src=https://images.pexels.com/photos/13988870/pexels-photo-13988870.jpeg?auto=compress&cs=tinysrgb&w=600"
@@ -98,8 +98,10 @@
                         <div class="badge ">
                             <i class="fa-solid fa-clock"></i> <span class=""> 25 mins</span>
                         </div>
+                        </a>
                     </div>
                     <div class="card hover:shadow-lg">
+                        <a href="checkOut.html">
                         <img class="w-full h-32 sm
                         :h-48 object-cover"
                             src="https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=600"
@@ -111,8 +113,10 @@
                         <div class="badge ">
                             <i class="fa-solid fa-clock"></i> <span class=""> 25 mins</span>
                         </div>
+                        </a>
                     </div>
                     <div class="card hover:shadow-lg">
+                           <a href="checkOut.html">
                         <img class="w-full h-32 sm
                         :h-48 object-cover"
                             src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=600"
@@ -124,6 +128,7 @@
                         <div class="badge ">
                             <i class="fa-solid fa-clock"></i> <span class=""> 25 mins</span>
                         </div>
+                        </a>
                     </div>
                 </div>
 
@@ -134,6 +139,7 @@
                  <div class="mt-8 grid  lg:grid-cols-3 gap-10">
                     <!-- cards  -->
                     <div class="card hover:shadow-lg">
+                        <a href="checkOut.html">
                         <img class="w-full h-32 sm
                         :h-48 object-cover"
                             src="https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&w=600"
@@ -145,8 +151,10 @@
                         <div class="badge ">
                             <i class="fa-solid fa-clock"></i> <span class=""> 25 mins</span>
                         </div>
+                        </a>
                     </div>
                     <div class="card hover:shadow-lg">
+                        <a href="checkOut.html">
                         <img class="w-full h-32 sm
                         :h-48 object-cover"
                             src="https://media.istockphoto.com/id/1295633127/photo/grilled-chicken-meat-and-fresh-vegetable-salad-of-tomato-avocado-lettuce-and-spinach-healthy.jpg?s=612x612&w=0&k=20&c=Qa3tiqUCO4VpVMQDXLXG47znCmHr_ZIdoynViJ8kW0E="
@@ -158,8 +166,10 @@
                         <div class="badge ">
                             <i class="fa-solid fa-clock"></i> <span class=""> 25 mins</span>
                         </div>
+                        </a>
                     </div>
                     <div class="card hover:shadow-lg">
+                        <a href="checkOut.html">
                         <img class="w-full h-32 sm
                         :h-48 object-cover"
                             src="https://media.istockphoto.com/id/1088970676/photo/grilled-chicken-breast-fillet-and-fresh-vegetable-salad-of-lettuce-arugula-spinach-cucumber.jpg?s=612x612&w=0&k=20&c=zBm23HGvkqpNkOeDvJa9F7TvaxxFKXCRJNaCnQNVISg="
@@ -171,6 +181,7 @@
                         <div class="badge ">
                             <i class="fa-solid fa-clock"></i> <span class=""> 25 mins</span>
                         </div>
+                        </a>
                     </div>
                 </div>
                 
@@ -199,6 +210,7 @@
                 Created by Ibrahim © 2023.
             </div>
         </main> 
+        
     </div>
 
         <script src="index.js"></script>

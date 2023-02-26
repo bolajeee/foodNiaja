@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+        <!-- style sheet -->
+    <link rel="stylesheet" href="/dist/output.css">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/5d2547f812.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+      <div class="bg-gray-100 p-8">
+        <span class="flex justify-center text-lg font-semibold text-gray-700 tracking-wider">LOGIN /SIGN-UP</span>
+    </div>
+
+    <main>
+        <div class="flex justify-center mt-10 text-lg tracking-wider hover:cursor-pointer">
+            <span class="" id="loginBtn">Login</span> 
+           <span class="mx-2">|</span> 
+            <span class="" id="signUpBtn">SignUp</span>
+        </div>
+
+        <div class="mt-10 h-fit">
+             <div class="shadow-md mx-16" id="logInForm"><!--log in form-->
+            
+            <form action=""> 
+                <div class="">
+                            <label for="Name">
+                                <input class="col-span-1 w-full bg-gray-100 text-white p-4 shadow-md" type="text" placeholder="Username">
+                            </label><br>
+                            <label for="Password">
+                                <input class="col-span-1 w-full bg-gray-100 text-white mt-4 p-4 shadow-md" type="password" placeholder="Password">
+                            </label><br>
+                            <div class="flex my-4 justify-between mx-2">
+                            <label for="checkbox">
+                            <input class="" type="checkbox"> Remember me
+                        </label>
+                            <span>
+                                <a href="">
+                                Forgot Password?
+                            </a></span>
+                            </div>
+                    </div>
+
+                     <a href="index.html">
+                <div  class="btn w-full justify-center flex bg-gray-700 hover:scale-90">   
+                         Log In 
+                    </div>  
+            </a>      
+            </form>
+        </div>
+
+       <div class="mt-10 h-fit">
+             <div class="shadow-md mx-16 hidden" id="signUpForm"> <!--signup form-->
+            
+            <form action="">
+                <div class="">
+                            <label for="Name">
+                                <input class="col-span-1 w-full bg-gray-100 text-white p-4 shadow-md" type="text" placeholder="Username">
+                            </label><br>
+                            <label for="Password">
+                                <input class="col-span-1 w-full bg-gray-100 text-white mt-4 p-4 shadow-md" type="password" placeholder="Password">
+                            </label><br>
+                             <label for="email">
+                                <input class="col-span-1 w-full bg-gray-100 text-white mt-4 p-4 shadow-md" type="email" placeholder="Eamil">
+                            </label><br>
+                            <div class="flex my-4 justify-between mx-2">
+                            <label for="checkbox">
+                            <input class="" type="checkbox"> Remember me
+                        </label>
+                            <span>
+                                <a href="">
+                                Forgot Password?
+                            </a></span>
+                            </div>
+                    </div>
+
+                    
+             <a href="index.html">
+                <div  class="btn w-full justify-center flex bg-gray-700 hover:scale-90">   
+                         Log In 
+                    </div>  
+            </a>
+            </form>
+           
+        </div>
+    </main>
+
+    <script src="login.js"></script>
+</body>
+</html>

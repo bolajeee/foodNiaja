@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CART</title>
+       <!-- style sheet -->
+    <link rel="stylesheet" href="/dist/output.css">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/5d2547f812.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="bg-gray-100 p-8">
+        <span class="flex justify-center text-lg font-semibold text-gray-700 tracking-wider"><a href="index.html"><span>HOME</span></a> / CART</span>
+    </div>
+
+
+<main class="px-16 py-6 md:flex gap-10 justify-center">
+
+     <div class="w-full md:w-fit bg-gray-200 shadow-md overflow-hidden "><!--mailing address-->
+            
+            <form action="">
+                <div class="grid grid-cols-2 m-4 gap-6 justify-between">
+                            <label for="Name">
+                                <input class="col-span-1 w-full bg-gray-100 text-gray-800 mt-4 p-4 shadow-md" type="text" placeholder="Full name please*">
+                            </label>
+                            <label for="Email">
+                                <input class="col-span-1 w-full bg-gray-100 text-gray-800 p-4 mt-4 shadow-md" type="Email" placeholder="Email*">
+                            </label>
+                    </div>  
+                    <div class="mx-4 overflow-hidden">
+                            </div>
+                       <label for="Address" class="flex gap-5 mx-4">
+                                <input class="col-span-1 w-full bg-gray-100 text-gray-800 mt-4 p-4 shadow-md" type="text" placeholder="Town / City">
+                                <input class="col-span-1 w-full bg-gray-100 text-gray-800 mt-4 p-4 shadow-md" type="text" placeholder="Street Address">
+                            </label>
+                             <div class="mx-4 overflow-hidden">
+                             <label for="mobile">
+                                <input class="col-span-1 w-full bg-gray-100 text-gray-800 p-4 mt-4 shadow-md" type="number" placeholder="Mobile Number*">
+                            </label>   
+                               <label for="password">
+                                <input class="col-span-1 w-full bg-gray-100 text-gray-800 p-4 mt-4 shadow-md" type="password" placeholder="Password*">
+                            </label>   
+                            <label for="textarea">
+                            <textarea class="my-4 w-full bg-gray-100  text-gray-800 mt-4 p-4 shadow-md" name="Notes" id="" cols="60" rows="10" placeholder="Notes about your order*"></textarea>
+                            </label>
+                            </div>
+                <div class="m-4  pt-2  hover:scale-95 ">
+                    <span class="mb-8 text-lg bg-gray-700 bg-gre px-6 py-2 text-white tracking-wider cursor-pointer transition duration-3000" id="buyBtn">Buy Now</span>
+                </div>
+            </form>
+        </div>
+
+        <div class="bg-gray-200 shadow-md font-semibold text-lg h-fit px-10 "><!--product card-->
+
+            <div class="flex justify-between my-4 mx-2">
+                <span>Product Name</span>
+                <span>Total</span>
+            </div>
+
+            <div class="under-rule bg-gray-100 mx-2"></div>
+            <div>
+                <div class="flex justify-between my-2 mx-2">
+                <span>Product Name</span>
+                <span>$30</span>
+                </div>
+                <div class="flex justify-between my-2 mx-2">
+                <span>Product Name</span>
+                <span>$30</span>
+                </div>
+            </div>
+ <div class="under-rule bg-gray-100 mx-2"></div>
+            <div class="flex justify-between my-4 mx-2">
+                <span>Shipping Fee</span>
+                <span>Free Shipping</span>
+            </div>
+<div class="under-rule bg-gray-100 mx-2"></div>
+              <div class="flex justify-between my-4 mx-2">
+                <span>Total</span>
+                <span>%60</span>
+            </div>
+ <div class="under-rule bg-gray-100 mx-2"></div>
+             <div >
+                <span class="flex justify-center">Payment form</span>
+               <div>
+                <div class="flex justify-evenly">
+                <span class="hover:cursor-pointer" id="Payment">Bank Transfer</span>
+                
+                <div class="vr"></div>   
+               
+                         <span class="hover:cursor-pointer">Cash on delivery</span>
+                         </div>
+
+                          <div id="payText" class="hidden">
+                            <span class="flex justify-center under-rule text-xl">Bank Details</span>
+                            <span class="block">Guarntee Trust Bank</span>
+                             <span class="block">0416257356,</span>
+                         <span >Please Note: <br><span>A receipt must be mailed to our company before delivery can be made.</span></span>
+               </div>
+            </div>
+        </div>
+
+    </main>
+
+           <div class="flex justify-center mt-14 mb-4 items-center rounded-md">
+            <div class= "text-sm px-6 py-3 rounded-lg rounded-r-none text-white hover:scale-90 cursor-pointer bg-gray-900 w-fit tracking-tight">
+                <span class="">Subscribe </span>
+            </div>
+            <div>
+              <label for="Email">
+                    <input class="text-sm  px-10 py-3 md:text-md rounded-md tracking-wider rounded-l-none bg-gray-700 text-white " type="Email" placeholder="Enter your Eamil* ">
+                </label>
+                </div>
+        </div>
+
+           <div class="text-gray-400 text-sm flex justify-center">
+                Created by Ibrahim © 2023.
+            </div>
+
+            <script src="cart.js"></script>
+</body>
+</html>

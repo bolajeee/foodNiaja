@@ -20,6 +20,10 @@
     @apply border-b-2 border-gray-600;
 }
 
+.vr{
+    @apply border-r-2 border-gray-900;
+}
+
 .header{
     @apply text-2xl font-extrabold uppercase; 
 }
