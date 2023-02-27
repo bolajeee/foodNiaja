@@ -20,8 +20,8 @@
     @apply border-b-2 border-gray-600;
 }
 
-.vr{
-    @apply border-r-2 border-gray-900;
+.vertical-rule{
+    @apply border-l-2 border-gray-600;
 }
 
 .header{
