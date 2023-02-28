@@ -80,9 +80,9 @@ function countdownTimer() {
   mins.innerText = m;
   secs.innerText = s;
 
-  if (diff < 0) {
+  if (diff <= 0) {
     clearInterval(countdownTimer);
-    document.getElementById("time").innerHTML = "EXPIRED";
+    document.getElementsById("time").innerHTML = "EXPIRED";
   }
 }
 setInterval(countdownTimer, 1000);
